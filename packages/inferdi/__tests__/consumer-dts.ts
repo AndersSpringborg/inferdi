@@ -159,6 +159,8 @@ void acceptsSyncCompanion
 void lifetime
 void derived
 
+// Module requirements and outputs must stay checked through the published
+// declarations, as module-diagnostics.test.ts checks them against src/.
 type ConfigRequirement = {config: Spec<{env: string}>}
 type ServiceOutput = {service: Spec<{run(): void}>}
 
